@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Soil Enhancement [1.0]</name>
+    <author>EarthyTurtle</author>
+    <targetVersion>1.0.2096</targetVersion>
+    <description>For Rimworld Version [1.0] | Version 1.6.3
+        
+A small, simple mod that allows you to both defile the dead, and feed your plants. This mod gives you the ability to break rocks down into various soil types. Starting with gravel, and working through to rich soil. Unlike other soil mods this mod does not add new soil types, but rather gives you access to build existing soil types.
+
+Compatibility:
+    - Placeable anywhere in your mod list below core.
+    - 'Soil Enhancement' plays nice with existing save files, there should be no issues installing. 
+    - Uninstall at your own risk, recommended you remove all traces of 'Soil Enhancement' from your save before uninstalling. Will almost certainly break your save if you do. :D
+
+'Soil Enhancement' is under the creative commons license. Cite, learn and use aspects from this mod, credit optional but appreciated ;). Please do not outright copy this mod and/or re-upload without my consent.
+    </description>
+</ModMetaData>

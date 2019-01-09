@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+<RecipeDef>
+    <defName>CrushCorpseFlesh</defName>
+    <label>make blood n bone bag</label>
+    <description>crushes a creature to a plup. Makes a good fertiliser when mixed with Soil.</description>
+    <jobString>crushing corpse.</jobString>
+    <workAmount>450</workAmount>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>ButcherFlesh</effectWorking>
+    <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+    <ingredients>
+        <li>
+            <filter>
+                <categories>
+                    <li>Corpses</li>
+                </categories>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <products>
+      <BloodNBone>1</BloodNBone>
+    </products>
+    <fixedIngredientFilter>
+        <categories>
+            <li>Corpses</li>
+        </categories>
+        <disallowedCategories>
+            <li>CorpsesMechanoid</li>
+        </disallowedCategories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+        <categories>
+            <li>CorpsesAnimal</li>
+        </categories>
+    </defaultIngredientFilter>
+    <recipeUsers>
+        <li>TableButcher</li>
+    </recipeUsers>
+    <researchPrerequisite>SoilEnhancement</researchPrerequisite>
+</RecipeDef>
+
+<RecipeDef>
+	<defName>MakeGravel</defName>
+	<label>make gravel bag</label>
+	<description>crushes a rock into gravel</description>
+	<jobString>crushing rocks.</jobString>
+	<workAmount>550</workAmount>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <ingredients>
+        <li>
+            <filter>
+                <categories>
+                    <li>StoneChunks</li>
+                </categories>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <products>
+        <GravelBag>2</GravelBag>
+    </products>
+    <fixedIngredientFilter>
+        <categories>
+            <li>StoneChunks</li>
+        </categories>
+    </fixedIngredientFilter>
+    <recipeUsers>
+        <li>TableStonecutter</li>
+    </recipeUsers>
+    <researchPrerequisite>Stonecutting</researchPrerequisite>
+</RecipeDef>
+  
+
+    <!-- === Code for 'Soil Enhancement!' by EarthyTurtle. === -->
+    <!-- === This label is actually just so I don't accidently place anything after the Defs tag. :P === -->
+</Defs>

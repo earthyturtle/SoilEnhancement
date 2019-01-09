@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- ========== Patch - Alters Terrain Affordances ========== -->
+    
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/TerrainDef[defName = "Soil"]/affordances</xpath>
+                <value>
+                    <li>SolidDiggable</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/TerrainDef[defName = "MossyTerrain"]/affordances</xpath>
+                <value>
+                    <li>SolidDiggable</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/TerrainDef[defName = "SoilRich"]/affordances</xpath>
+                <value>
+                    <li>SolidDiggable</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/TerrainDef[defName = "Gravel"]/affordances</xpath>
+                <value>
+                    <li>SolidDiggable</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+    <!-- === Code for 'Soil Enhancement!' by EarthyTurtle. === -->
+    <!-- === This label is actually just so I don't accidently place anything after the Patch tag. :P === -->
+</Patch>

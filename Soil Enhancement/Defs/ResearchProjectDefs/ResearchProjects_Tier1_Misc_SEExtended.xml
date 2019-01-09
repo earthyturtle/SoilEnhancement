@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=============================== Tier 1: Soil ===================================-->
+
+
+    <ResearchProjectDef>
+        <defName>SoilEnhancement</defName>
+        <label>SoilEnhancement</label>
+        <description>The ability to create soil from rock and a lot of hardwork.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Medieval</techLevel>
+        <prerequisites>
+            <li>Stonecutting</li>
+        </prerequisites>
+        <tab>Main</tab>
+        <researchViewX>1</researchViewX>
+        <researchViewY>6</researchViewY>
+    </ResearchProjectDef>
+
+
+    <!-- === Code for 'Soil Enhancement!' by EarthyTurtle. === -->
+    <!-- === This label is actually just so I don't accidently place anything after the Defs tag. :P === -->
+</Defs>

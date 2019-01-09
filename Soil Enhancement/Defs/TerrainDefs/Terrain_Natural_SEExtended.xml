@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Standard soils -->
+
+  <TerrainDef>
+    <defName>BuildableSoil</defName>
+    <label>soil patch</label>
+    <description>Good soil, great for growing plants.</description>
+    <texturePath>Terrain/Surfaces/Soil</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>340</renderPrecedence>
+    <pathCost>2</pathCost>
+    <statBases>
+    <WorkToBuild>150</WorkToBuild>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <designationCategory>Floors</designationCategory>
+    <constructEffect>ConstructDirt</constructEffect>
+    <researchPrerequisites><li>Stonecutting</li></researchPrerequisites>
+    <costList>
+        <SoilBag>1</SoilBag>
+    </costList>
+    <scatterType>Rocky</scatterType>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    <li>SolidDiggable</li>
+    </affordances>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <generatedFilth>Filth_Dirt</generatedFilth>
+    <fertility>1.0</fertility>
+    <takeFootprints>True</takeFootprints>
+    <tools>
+      <li>
+        <label>dirt</label>
+        <capacities>
+          <li>KickMaterialInEyes</li>
+        </capacities>
+        <hediff>DirtInEyes</hediff>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+  </TerrainDef>
+
+  <!-- Rich soils -->
+
+  <TerrainDef>
+    <defName>BuildableSoilRich</defName>
+    <label>rich soil patch</label>
+    <description>Moist rich fertile soil, perfect compost for growing plants.</description>
+    <texturePath>Terrain/Surfaces/SoilRich</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>335</renderPrecedence>
+    <pathCost>2</pathCost>
+    <statBases>
+    <WorkToBuild>200</WorkToBuild>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <costList>
+        <RichSoilBag>1</RichSoilBag>
+    </costList>
+    <designationCategory>Floors</designationCategory>
+    <constructEffect>ConstructDirt</constructEffect>
+    <researchPrerequisites><li>Stonecutting</li></researchPrerequisites>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    <li>SolidDiggable</li>
+    </affordances>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <generatedFilth>Filth_Dirt</generatedFilth>
+    <fertility>1.4</fertility>
+    <takeFootprints>True</takeFootprints>
+    <tools>
+      <li>
+        <label>dirt</label>
+        <capacities>
+          <li>KickMaterialInEyes</li>
+        </capacities>
+        <hediff>DirtInEyes</hediff>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+  </TerrainDef>
+
+  <!-- Poor soils -->
+
+    <TerrainDef>
+        <defName>BuildableGravel</defName>
+        <label>gravel patch</label>
+        <description>Rough gravel, easy to produce but can barely grow anything.</description>
+        <texturePath>Terrain/Surfaces/Gravel</texturePath>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>320</renderPrecedence>
+        <pathCost>2</pathCost>
+        <statBases>
+            <WorkToBuild>125</WorkToBuild>
+        <Beauty>-1</Beauty>
+        <Cleanliness>-1</Cleanliness>
+        </statBases>
+        <costList>
+            <GravelBag>1</GravelBag>
+        </costList>
+        <designationCategory>Floors</designationCategory>
+        <constructEffect>ConstructDirt</constructEffect>
+        <researchPrerequisites><li>Stonecutting</li></researchPrerequisites>
+        <scatterType>Rocky</scatterType>
+        <affordances>
+        <li>Light</li>
+        <li>Medium</li>
+        <li>Heavy</li>
+        <li>GrowSoil</li>
+        <li>Diggable</li>
+        <li>SolidDiggable</li>
+        </affordances>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <generatedFilth>Filth_Dirt</generatedFilth>
+        <fertility>0.7</fertility>
+        <takeFootprints>True</takeFootprints>
+        <tools>
+        <li>
+            <label>gravel</label>
+            <capacities>
+            <li>KickMaterialInEyes</li>
+            </capacities>
+            <hediff>GravelInEyes</hediff>
+            <cooldownTime>1.5</cooldownTime>
+        </li>
+        </tools>
+    </TerrainDef>
+
+  <!-- Sand -->
+
+    <TerrainDef>
+        <defName>BuildableSand</defName>
+        <label>sand patch</label>
+        <description>Smooth yet firm sand.</description>
+        <texturePath>Terrain/Surfaces/Sand</texturePath>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>350</renderPrecedence>
+        <pathCost>4</pathCost>
+        <statBases>
+            <WorkToBuild>100</WorkToBuild>
+            <Beauty>-1</Beauty>
+            <Cleanliness>-1</Cleanliness>
+        </statBases>
+        <costList>
+            <SandBag>1</SandBag>
+        </costList>
+        <designationCategory>Floors</designationCategory>
+        <constructEffect>ConstructDirt</constructEffect>
+        <researchPrerequisites><li>Stonecutting</li></researchPrerequisites>
+        <scatterType>SoftDry</scatterType>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+            <li>Diggable</li>
+        </affordances>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <generatedFilth>Filth_Sand</generatedFilth>
+        <fertility>0.10</fertility>
+        <takeFootprints>True</takeFootprints>
+        <tools>
+            <li>
+                <label>sand</label>
+                <capacities>
+                    <li>KickMaterialInEyes</li>
+                </capacities>
+                <hediff>SandInEyes</hediff>
+                <cooldownTime>1.5</cooldownTime>
+            </li>
+        </tools>
+    </TerrainDef>
+
+  <!-- Sand -->
+  
+    <TerrainDef>
+        <defName>BuildablePackedDirt</defName>
+        <label>compacted dirt</label>
+        <description>Compacted dirt, makes travel slightly easier, but you can't grow anything on it.</description>
+        <texturePath>Terrain/Surfaces/PackedDirt</texturePath>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>360</renderPrecedence>
+        <pathCost>1</pathCost>
+        <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+        <statBases>
+            <Beauty>-1</Beauty>
+            <Cleanliness>-1</Cleanliness>
+            <WorkToBuild>400</WorkToBuild>
+        </statBases>
+        <designationCategory>Floors</designationCategory>
+        <constructEffect>ConstructDirt</constructEffect>
+        <scatterType>Rocky</scatterType>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+            <li>Diggable</li>
+        </affordances>
+        <terrainAffordanceNeeded>SolidDiggable</terrainAffordanceNeeded>
+        <generatedFilth>Filth_Dirt</generatedFilth>
+        <fertility>0.0</fertility>
+        <tags>
+            <li>Road</li>
+        </tags>
+    </TerrainDef>
+
+    <!-- === Code for 'Soil Enhancement!' by EarthyTurtle. === -->
+    <!-- === This label is actually just so I don't accidently place anything after the Defs tag. :P === -->
+
+</Defs>
